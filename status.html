@@ -137,20 +137,55 @@
     margin-top: 24px;
     font-size: 15px;
   }
+
+  /* Weerblok */
+  .weather-list {
+    margin-top: 8px;
+  }
+
+  .weather-card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    padding: 10px 12px;
+    margin-bottom: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+  }
+
+  .weather-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2px;
+  }
+
+  .weather-main {
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .weather-temp {
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .weather-sub {
+    font-size: 13px;
+    color: var(--subtext);
+  }
 </style>
 </head><body>
 <h1>Vrije banen 20:00–21:30</h1>
-<div class='timestamp'>Laatst geüpdatet: 2025-11-24 19:44:13 </div>
+<div class='timestamp'>Laatst geüpdatet: 2025-11-24 19:51:53 </div>
 <section class='hero'>
 <div class='hero-title'>Eerstvolgende vrije baan</div>
 <div class='hero-date'>Woensdag 26 november</div>
-<div class='hero-detail'>Padel indoor 6 — 20:00–21:30</div>
+<div class='hero-detail'>Padel indoor 10 — 20:00–21:30</div>
 </section>
 <h2>Beschikbare dagen</h2>
 <details>
-<summary>Woensdag 26 november – 2 vrije banen</summary>
+<summary>Woensdag 26 november – 1 vrije banen</summary>
 <ul>
-<li>Padel indoor 6</li>
 <li>Padel indoor 10</li>
 </ul>
 </details>
@@ -194,6 +229,58 @@
 <li>Padel indoor 11</li>
 </ul>
 </details>
+<h2>Weersverwachting — Houten (7 dagen)</h2>
+<div class='weather-list'>
+<div class='weather-card'>
+<div class='weather-row'>
+<div class='weather-main'>🌦️ Motregen — Maandag 24 november</div>
+<div class='weather-temp'>7.1° / 3.2°</div>
+</div>
+<div class='weather-sub'>Neerslagkans: 94%</div>
+</div>
+<div class='weather-card'>
+<div class='weather-row'>
+<div class='weather-main'>🌧️ Regen — Dinsdag 25 november</div>
+<div class='weather-temp'>7.2° / -1.0°</div>
+</div>
+<div class='weather-sub'>Neerslagkans: 27%</div>
+</div>
+<div class='weather-card'>
+<div class='weather-row'>
+<div class='weather-main'>☁️ Bewolkt — Woensdag 26 november</div>
+<div class='weather-temp'>4.7° / -0.1°</div>
+</div>
+<div class='weather-sub'>Neerslagkans: 4%</div>
+</div>
+<div class='weather-card'>
+<div class='weather-row'>
+<div class='weather-main'>☁️ Bewolkt — Donderdag 27 november</div>
+<div class='weather-temp'>6.4° / -0.1°</div>
+</div>
+<div class='weather-sub'>Neerslagkans: 22%</div>
+</div>
+<div class='weather-card'>
+<div class='weather-row'>
+<div class='weather-main'>🌦️ Motregen — Vrijdag 28 november</div>
+<div class='weather-temp'>8.5° / 5.9°</div>
+</div>
+<div class='weather-sub'>Neerslagkans: 59%</div>
+</div>
+<div class='weather-card'>
+<div class='weather-row'>
+<div class='weather-main'>🌦️ Motregen — Zaterdag 29 november</div>
+<div class='weather-temp'>8.5° / 5.4°</div>
+</div>
+<div class='weather-sub'>Neerslagkans: 37%</div>
+</div>
+<div class='weather-card'>
+<div class='weather-row'>
+<div class='weather-main'>🌦️ Motregen — Zondag 30 november</div>
+<div class='weather-temp'>6.5° / 3.9°</div>
+</div>
+<div class='weather-sub'>Neerslagkans: 39%</div>
+</div>
+</div>
 <script>
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
