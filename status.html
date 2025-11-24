@@ -1,64 +1,116 @@
-<html><head><meta charset='utf-8'><title>Padel baan checker</title>
+<html><head><meta charset='utf-8'><title>Padel baan check</title>
 <style>
   :root {
-    --bg: #f7f7f9;
+    --bg: #f5f5f7;
     --card-bg: #ffffff;
-    --border: #e0e0e0;
-    --text: #333;
-    --subtext: #777;
-    --accent: #4CAF50;
+    --border: #e0e0e5;
+    --text: #1d1d1f;
+    --subtext: #6e6e73;
+    --accent: #34c759;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #000000;
+      --card-bg: #1c1c1e;
+      --border: #3a3a3c;
+      --text: #f5f5f7;
+      --subtext: #a1a1aa;
+      --accent: #30d158;
+    }
   }
 
   body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', system-ui, sans-serif;
     background: var(--bg);
-    padding: 20px;
-    max-width: 800px;
+    padding: 20px 16px 30px 16px;
+    max-width: 780px;
     margin: 0 auto;
     color: var(--text);
   }
 
   h1 {
     text-align: center;
-    margin-bottom: 15px;
+    margin: 8px 0 4px 0;
     font-size: 26px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+
+  h2 {
+    margin-top: 24px;
+    margin-bottom: 8px;
+    font-size: 18px;
     font-weight: 600;
   }
 
   .timestamp {
     text-align: center;
-    font-size: 14px;
+    font-size: 13px;
     color: var(--subtext);
-    margin-bottom: 25px;
+    margin-bottom: 20px;
+  }
+
+  .hero {
+    background: var(--card-bg);
+    border-radius: 16px;
+    padding: 14px 16px;
+    margin-bottom: 18px;
+    border: 1px solid var(--border);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  }
+
+  .hero-title {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--subtext);
+    margin-bottom: 4px;
+  }
+
+  .hero-date {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+
+  .hero-detail {
+    font-size: 15px;
+    color: var(--subtext);
   }
 
   details {
     background: var(--card-bg);
     border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 12px 16px;
-    margin-bottom: 12px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.04);
-    transition: transform 0.15s;
+    border-radius: 12px;
+    padding: 10px 14px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    transition: transform 0.12s ease, box-shadow 0.12s ease;
   }
 
   details:hover {
-    transform: translateY(-2px);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
   }
 
   summary {
     cursor: pointer;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 600;
     outline: none;
+    list-style: none;
   }
 
-  summary::-webkit-details-marker { display: none; }
+  summary::-webkit-details-marker {
+    display: none;
+  }
 
   summary::before {
     content: '▸';
     margin-right: 8px;
-    transition: transform 0.15s;
+    display: inline-block;
+    transition: transform 0.12s ease;
   }
 
   details[open] summary::before {
@@ -66,29 +118,35 @@
   }
 
   ul {
-    margin-top: 10px;
-    padding-left: 20px;
+    margin-top: 8px;
+    padding-left: 18px;
   }
 
   li {
-    margin: 6px 0;
-    padding: 6px 4px;
+    margin: 4px 0;
+    padding: 4px 4px;
     border-left: 3px solid var(--accent);
-    background: #f3fdf3;
+    background: rgba(52, 199, 89, 0.08);
     border-radius: 6px;
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .none {
     text-align: center;
     color: var(--subtext);
-    margin-top: 20px;
+    margin-top: 24px;
     font-size: 15px;
   }
 </style>
 </head><body>
 <h1>Vrije banen 20:00-21:30</h1>
-<div class='timestamp'>Laatst geüpdatet: 2025-11-24 14:48:50 (NL tijd)</div>
+<div class='timestamp'>Laatst geüpdatet: 2025-11-24 15:01:52 </div>
+<section class='hero'>
+<div class='hero-title'>Eerstvolgende vrije baan</div>
+<div class='hero-date'>2025-12-05</div>
+<div class='hero-detail'>Padel indoor 1 — 20:00–21:30</div>
+</section>
+<h2>Beschikbare dagen</h2>
 <details>
 <summary>2025-12-05 – 12 vrije banen</summary>
 <ul>
