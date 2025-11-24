@@ -1,0 +1,22 @@
+{
+  "name": "Padel banen",
+  "short_name": "Padel banen",
+  "id": "/padel-status/status.html",
+  "start_url": "/padel-status/status.html",
+  "scope": "/padel-status/",
+  "display": "standalone",
+  "background_color": "#34C759",
+  "theme_color": "#34C759",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
