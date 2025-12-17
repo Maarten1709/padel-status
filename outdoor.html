@@ -58,20 +58,48 @@
       margin-bottom: 20px;
     }
 
+    /* ✅ Navigatie (Indoor / Outdoor) — groter & mobielvriendelijk */
     .nav {
       text-align: center;
-      margin: 8px 0 10px 0;
-      font-size: 14px;
+      margin: 12px 0 18px 0;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
     }
 
     .nav a {
-      color: var(--accent);
-      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 10px 18px;     /* groter tappable area */
+      min-height: 44px;       /* iOS/Android guideline */
+      border-radius: 12px;
+
+      font-size: 15px;
       font-weight: 600;
+      text-decoration: none;
+
+      color: var(--accent);
+      background: rgba(52, 199, 89, 0.12);
+      border: 1px solid rgba(52, 199, 89, 0.35);
+
+      transition: background 0.15s ease, transform 0.1s ease;
+      -webkit-tap-highlight-color: transparent;
     }
 
     .nav a:hover {
-      text-decoration: underline;
+      background: rgba(52, 199, 89, 0.18);
+    }
+
+    .nav a:active {
+      transform: scale(0.97);
+    }
+
+    .nav a.active {
+      background: var(--accent);
+      color: #ffffff;
+      border-color: var(--accent);
     }
 
     .hero {
@@ -208,7 +236,7 @@
     // ========================
     // Config
     // ========================
-    const STATUS_URL = "status_outdoor.json";          // outdoor
+    const STATUS_URL = "status_outdoor.json";          // indoor
     const WEATHER_URL = null;                  // zet bv "weather.json" als je die hebt
     const TITLE = "Vrije OUTDOOR banen 20:00–21:30";
 
@@ -225,7 +253,6 @@
     }
 
     function fmtTimestamp(iso) {
-      // "2025-12-17T11:49:03.123" -> "2025-12-17 11:49:03"
       return (iso || "").replace("T", " ").split(".")[0];
     }
 
@@ -295,7 +322,8 @@
 
       const navHtml = `
         <div class="nav">
-          <a href="status.html">Indoor</a> | <a href="outdoor.html">Outdoor</a>
+          <a href="status.html">Indoor</a>
+          <a class="active" href="outdoor.html">Outdoor</a>
         </div>
       `;
 
@@ -339,7 +367,6 @@
         <div id="weather"></div>
       `;
 
-      // Weather is optioneel
       if (WEATHER_URL) {
         try {
           const w = await loadJson(WEATHER_URL);
@@ -359,7 +386,7 @@
             <div class="weather-list">${cards || `<div class="none">Geen weerdata.</div>`}</div>
           `;
         } catch (e) {
-          // Negeer weer-fouten; hoofdfunctionaliteit moet werken
+          // ignore weather errors
         }
       }
     }
