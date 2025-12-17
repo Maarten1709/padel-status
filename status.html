@@ -1,261 +1,376 @@
-<html><head><meta charset='utf-8'><title>Padel baan check</title><link rel='manifest' href='manifest.json'><meta name='theme-color' content='#34C759'><link rel='apple-touch-icon' href='icon-192.png'>
-<style>
-  :root {
-    --bg: #f5f5f7;
-    --card-bg: #ffffff;
-    --border: #e0e0e5;
-    --text: #1d1d1f;
-    --subtext: #6e6e73;
-    --accent: #34C759;
-  }
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Padel baan check</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#34C759">
+  <link rel="apple-touch-icon" href="icon-192.png">
 
-  @media (prefers-color-scheme: dark) {
+  <style>
     :root {
-      --bg: #000000;
-      --card-bg: #1c1c1e;
-      --border: #3a3a3c;
-      --text: #f5f5f7;
-      --subtext: #a1a1aa;
-      --accent: #30D158;
+      --bg: #f5f5f5f7;
+      --card-bg: #ffffff;
+      --border: #e0e0e5;
+      --text: #1d1d1f;
+      --subtext: #6e6e73;
+      --accent: #34C759;
     }
-  }
 
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', system-ui, sans-serif;
-    background: var(--bg);
-    padding: 20px 16px 30px 16px;
-    max-width: 780px;
-    margin: 0 auto;
-    color: var(--text);
-  }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #000000;
+        --card-bg: #1c1c1e;
+        --border: #3a3a3c;
+        --text: #f5f5f7;
+        --subtext: #a1a1aa;
+        --accent: #30D158;
+      }
+    }
 
-  h1 {
-    text-align: center;
-    margin: 8px 0 4px 0;
-    font-size: 26px;
-    font-weight: 600;
-    letter-spacing: -0.02em;
-  }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', system-ui, sans-serif;
+      background: var(--bg);
+      padding: 20px 16px 30px 16px;
+      max-width: 780px;
+      margin: 0 auto;
+      color: var(--text);
+    }
 
-  h2 {
-    margin-top: 24px;
-    margin-bottom: 8px;
-    font-size: 18px;
-    font-weight: 600;
-  }
+    h1 {
+      text-align: center;
+      margin: 8px 0 4px 0;
+      font-size: 26px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
 
-  .timestamp {
-    text-align: center;
-    font-size: 13px;
-    color: var(--subtext);
-    margin-bottom: 20px;
-  }
+    h2 {
+      margin-top: 24px;
+      margin-bottom: 8px;
+      font-size: 18px;
+      font-weight: 600;
+    }
 
-  .hero {
-    background: var(--card-bg);
-    border-radius: 16px;
-    padding: 14px 16px;
-    margin-bottom: 18px;
-    border: 1px solid var(--border);
-    box-shadow: 0 8px 24px rgba(0,0,0,0.06);
-  }
+    .timestamp {
+      text-align: center;
+      font-size: 13px;
+      color: var(--subtext);
+      margin-bottom: 20px;
+    }
 
-  .hero-title {
-    font-size: 13px;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: var(--subtext);
-    margin-bottom: 4px;
-  }
+    .nav {
+      text-align: center;
+      margin: 8px 0 10px 0;
+      font-size: 14px;
+    }
 
-  .hero-date {
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 2px;
-  }
+    .nav a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
 
-  .hero-detail {
-    font-size: 15px;
-    color: var(--subtext);
-  }
+    .nav a:hover {
+      text-decoration: underline;
+    }
 
-  details {
-    background: var(--card-bg);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 10px 14px;
-    margin-bottom: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-    transition: transform 0.12s ease, box-shadow 0.12s ease;
-  }
+    .hero {
+      background: var(--card-bg);
+      border-radius: 16px;
+      padding: 14px 16px;
+      margin-bottom: 18px;
+      border: 1px solid var(--border);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+    }
 
-  details:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-  }
+    .hero-title {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--subtext);
+      margin-bottom: 4px;
+    }
 
-  summary {
-    cursor: pointer;
-    font-size: 15px;
-    font-weight: 600;
-    outline: none;
-    list-style: none;
-  }
+    .hero-date {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
 
-  summary::-webkit-details-marker {
-    display: none;
-  }
+    .hero-detail {
+      font-size: 15px;
+      color: var(--subtext);
+    }
 
-  summary::before {
-    content: '▸';
-    margin-right: 8px;
-    display: inline-block;
-    transition: transform 0.12s ease;
-  }
+    details {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 10px 14px;
+      margin-bottom: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      transition: transform 0.12s ease, box-shadow 0.12s ease;
+    }
 
-  details[open] summary::before {
-    content: '▾';
-  }
+    details:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    }
 
-  ul {
-    margin-top: 8px;
-    padding-left: 18px;
-  }
+    summary {
+      cursor: pointer;
+      font-size: 15px;
+      font-weight: 600;
+      outline: none;
+      list-style: none;
+    }
 
-  li {
-    margin: 4px 0;
-    padding: 4px 4px;
-    border-left: 3px solid var(--accent);
-    background: rgba(52, 199, 89, 0.08);
-    border-radius: 6px;
-    font-size: 15px;
-  }
+    summary::-webkit-details-marker {
+      display: none;
+    }
 
-  .none {
-    text-align: center;
-    color: var(--subtext);
-    margin-top: 24px;
-    font-size: 15px;
-  }
+    summary::before {
+      content: '▸';
+      margin-right: 8px;
+      display: inline-block;
+      transition: transform 0.12s ease;
+    }
 
-  /* Weerblok */
-  .weather-list {
-    margin-top: 8px;
-  }
+    details[open] summary::before {
+      content: '▾';
+    }
 
-  .weather-card {
-    background: var(--card-bg);
-    border-radius: 12px;
-    border: 1px solid var(--border);
-    padding: 10px 12px;
-    margin-bottom: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
-  }
+    ul {
+      margin-top: 8px;
+      padding-left: 18px;
+    }
 
-  .weather-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 2px;
-  }
+    li {
+      margin: 4px 0;
+      padding: 4px 4px;
+      border-left: 3px solid var(--accent);
+      background: rgba(52, 199, 89, 0.08);
+      border-radius: 6px;
+      font-size: 15px;
+    }
 
-  .weather-main {
-    font-size: 15px;
-    font-weight: 500;
-  }
+    .none {
+      text-align: center;
+      color: var(--subtext);
+      margin-top: 24px;
+      font-size: 15px;
+    }
 
-  .weather-temp {
-    font-size: 15px;
-    font-weight: 500;
-  }
+    /* Weerblok */
+    .weather-list {
+      margin-top: 8px;
+    }
 
-  .weather-sub {
-    font-size: 13px;
-    color: var(--subtext);
-  }
-</style>
-</head><body>
-<h1>Vrije banen 20:00–21:30</h1>
-<div class='timestamp'>Laatst geüpdatet: 2025-12-17 11:49:03 </div>
-<section class='hero'>
-<div class='hero-title'>Eerstvolgende vrije baan</div>
-<div class='hero-date'>Vrijdag 2 januari</div>
-<div class='hero-detail'>Padel indoor 1 — 20:00–21:30</div>
-</section>
-<h2>Beschikbare dagen</h2>
-<details>
-<summary>Vrijdag 2 januari – 11 vrije banen</summary>
-<ul>
-<li>Padel indoor 1</li>
-<li>Padel indoor 2</li>
-<li>Padel indoor 4</li>
-<li>Padel indoor 5</li>
-<li>Padel indoor 6</li>
-<li>Padel indoor 7</li>
-<li>Padel indoor 8</li>
-<li>Padel indoor 9</li>
-<li>Padel indoor 10</li>
-<li>Padel indoor 11</li>
-<li>Padel indoor 12</li>
-</ul>
-</details>
-<h2>Weersverwachting — Houten (7 dagen)</h2>
-<div class='weather-list'>
-<div class='weather-card'>
-<div class='weather-row'>
-<div class='weather-main'>☁️ Bewolkt — Woensdag 17 december</div>
-<div class='weather-temp'>9.0° / 5.6°</div>
-</div>
-<div class='weather-sub'>Neerslagkans: 11%</div>
-</div>
-<div class='weather-card'>
-<div class='weather-row'>
-<div class='weather-main'>🌦️ Motregen — Donderdag 18 december</div>
-<div class='weather-temp'>10.6° / 5.6°</div>
-</div>
-<div class='weather-sub'>Neerslagkans: 59%</div>
-</div>
-<div class='weather-card'>
-<div class='weather-row'>
-<div class='weather-main'>🌦️ Motregen — Vrijdag 19 december</div>
-<div class='weather-temp'>10.8° / 6.6°</div>
-</div>
-<div class='weather-sub'>Neerslagkans: 58%</div>
-</div>
-<div class='weather-card'>
-<div class='weather-row'>
-<div class='weather-main'>☁️ Bewolkt — Zaterdag 20 december</div>
-<div class='weather-temp'>6.5° / 3.2°</div>
-</div>
-<div class='weather-sub'>Neerslagkans: 14%</div>
-</div>
-<div class='weather-card'>
-<div class='weather-row'>
-<div class='weather-main'>☁️ Bewolkt — Zondag 21 december</div>
-<div class='weather-temp'>9.2° / 6.4°</div>
-</div>
-<div class='weather-sub'>Neerslagkans: 16%</div>
-</div>
-<div class='weather-card'>
-<div class='weather-row'>
-<div class='weather-main'>☁️ Bewolkt — Maandag 22 december</div>
-<div class='weather-temp'>6.2° / 3.2°</div>
-</div>
-<div class='weather-sub'>Neerslagkans: 6%</div>
-</div>
-<div class='weather-card'>
-<div class='weather-row'>
-<div class='weather-main'>☁️ Bewolkt — Dinsdag 23 december</div>
-<div class='weather-temp'>4.9° / 3.2°</div>
-</div>
-<div class='weather-sub'>Neerslagkans: 3%</div>
-</div>
-</div>
-<script>
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('sw.js');
-  });
-}
-</script>
-</body></html>
+    .weather-card {
+      background: var(--card-bg);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      padding: 10px 12px;
+      margin-bottom: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+    }
+
+    .weather-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2px;
+    }
+
+    .weather-main {
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+    .weather-temp {
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+    .weather-sub {
+      font-size: 13px;
+      color: var(--subtext);
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <div class="none">Laden…</div>
+  </div>
+
+  <script>
+    // ========================
+    // Config
+    // ========================
+    const STATUS_URL = "status.json";          // indoor
+    const WEATHER_URL = null;                  // zet bv "weather.json" als je die hebt
+    const TITLE = "Vrije INDOOR banen 20:00–21:30";
+
+    // ========================
+    // Helpers
+    // ========================
+    function escapeHtml(str) {
+      return (str || "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+
+    function fmtTimestamp(iso) {
+      // "2025-12-17T11:49:03.123" -> "2025-12-17 11:49:03"
+      return (iso || "").replace("T", " ").split(".")[0];
+    }
+
+    function dayNameNL(dateObj) {
+      const names = ["Zondag","Maandag","Dinsdag","Woensdag","Donderdag","Vrijdag","Zaterdag"];
+      return names[dateObj.getDay()];
+    }
+
+    function monthNameNL(m) {
+      const names = ["januari","februari","maart","april","mei","juni","juli","augustus","september","oktober","november","december"];
+      return names[m];
+    }
+
+    function fmtDateNL(yyyyMmDd) {
+      const [y, m, d] = (yyyyMmDd || "").split("-").map(Number);
+      if (!y || !m || !d) return yyyyMmDd || "";
+      const dt = new Date(y, m - 1, d);
+      return `${dayNameNL(dt)} ${d} ${monthNameNL(dt.getMonth())}`;
+    }
+
+    function groupByDate(allSlots) {
+      const map = new Map();
+      for (const s of (allSlots || [])) {
+        const date = s.date;
+        if (!map.has(date)) map.set(date, []);
+        map.get(date).push(s);
+      }
+      const dates = Array.from(map.keys()).sort();
+      return dates.map(date => {
+        const slots = map.get(date) || [];
+        slots.sort((a, b) => (a.court || "").localeCompare((b.court || ""), "nl"));
+        return { date, slots };
+      });
+    }
+
+    function pickFirstSlot(groups) {
+      for (const g of groups) {
+        if (g.slots && g.slots.length) return { date: g.date, slot: g.slots[0] };
+      }
+      return null;
+    }
+
+    async function loadJson(url) {
+      const res = await fetch(url, { cache: "no-store" });
+      if (!res.ok) throw new Error(`Fetch failed: ${res.status} ${res.statusText}`);
+      return await res.json();
+    }
+
+    // ========================
+    // Render
+    // ========================
+    async function render() {
+      const root = document.getElementById("app");
+      root.innerHTML = `<div class="none">Laden…</div>`;
+
+      let status;
+      try {
+        status = await loadJson(STATUS_URL);
+      } catch (e) {
+        root.innerHTML = `<div class="none">Kon status niet laden: ${escapeHtml(e.message)}</div>`;
+        return;
+      }
+
+      const ts = fmtTimestamp(status.timestamp);
+      const groups = groupByDate(status.all_slots || []);
+      const first = pickFirstSlot(groups);
+
+      const navHtml = `
+        <div class="nav">
+          <a href="status.html">Indoor</a> | <a href="outdoor.html">Outdoor</a>
+        </div>
+      `;
+
+      const heroHtml = first ? `
+        <section class="hero">
+          <div class="hero-title">Eerstvolgende vrije baan</div>
+          <div class="hero-date">${escapeHtml(fmtDateNL(first.date))}</div>
+          <div class="hero-detail">${escapeHtml(first.slot.court)} — ${escapeHtml(first.slot.period || "20:00–21:30")}</div>
+        </section>
+      ` : `
+        <section class="hero">
+          <div class="hero-title">Eerstvolgende vrije baan</div>
+          <div class="hero-date">Geen beschikbaarheid</div>
+          <div class="hero-detail">Er zijn momenteel geen vrije banen in dit venster.</div>
+        </section>
+      `;
+
+      let daysHtml = "";
+      if (!groups.length || groups.every(g => !g.slots || g.slots.length === 0)) {
+        daysHtml = `<div class="none">Geen vrije banen gevonden.</div>`;
+      } else {
+        daysHtml = groups.map(g => {
+          const label = `${fmtDateNL(g.date)} – ${g.slots.length} vrije banen`;
+          const lis = g.slots.map(s => `<li>${escapeHtml(s.court)}</li>`).join("");
+          return `
+            <details>
+              <summary>${escapeHtml(label)}</summary>
+              <ul>${lis}</ul>
+            </details>
+          `;
+        }).join("");
+      }
+
+      root.innerHTML = `
+        <h1>${escapeHtml(TITLE)}</h1>
+        ${navHtml}
+        <div class="timestamp">Laatst geüpdatet: ${escapeHtml(ts)}</div>
+        ${heroHtml}
+        <h2>Beschikbare dagen</h2>
+        ${daysHtml}
+        <div id="weather"></div>
+      `;
+
+      // Weather is optioneel
+      if (WEATHER_URL) {
+        try {
+          const w = await loadJson(WEATHER_URL);
+          const weatherRoot = document.getElementById("weather");
+          const cards = (w.days || []).map(d => `
+            <div class="weather-card">
+              <div class="weather-row">
+                <div class="weather-main">${escapeHtml(d.main)} — ${escapeHtml(d.label)}</div>
+                <div class="weather-temp">${escapeHtml(d.hi)}° / ${escapeHtml(d.lo)}°</div>
+              </div>
+              <div class="weather-sub">Neerslagkans: ${escapeHtml(d.precip)}%</div>
+            </div>
+          `).join("");
+
+          weatherRoot.innerHTML = `
+            <h2>${escapeHtml(w.title || "Weersverwachting")}</h2>
+            <div class="weather-list">${cards || `<div class="none">Geen weerdata.</div>`}</div>
+          `;
+        } catch (e) {
+          // Negeer weer-fouten; hoofdfunctionaliteit moet werken
+        }
+      }
+    }
+
+    render();
+
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('sw.js');
+      });
+    }
+  </script>
+</body>
+</html>
