@@ -1,6 +1,6 @@
 // sw.js — cache app shell, maar haal status JSON altijd vers op
 
-const CACHE_NAME = "padel-status-v2";
+const CACHE_NAME = "padel-status-v3";
 
 // Bestanden die “statisch” zijn en je graag cached wil hebben
 const APP_SHELL = [
