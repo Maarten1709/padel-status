@@ -58,7 +58,7 @@
       margin-bottom: 20px;
     }
 
-    /* ✅ Navigatie (Indoor / Outdoor) — groter & mobielvriendelijk */
+    /* ✅ Navigatie (Indoor / Outdoor) — groot & mobielvriendelijk */
     .nav {
       text-align: center;
       margin: 12px 0 18px 0;
@@ -72,8 +72,8 @@
       align-items: center;
       justify-content: center;
 
-      padding: 10px 18px;     /* groter tappable area */
-      min-height: 44px;       /* iOS/Android guideline */
+      padding: 10px 18px;
+      min-height: 44px;
       border-radius: 12px;
 
       font-size: 15px;
@@ -236,7 +236,7 @@
     // ========================
     // Config
     // ========================
-    const STATUS_URL = "status_outdoor.json";          // indoor
+    const STATUS_URL = "status_outdoor.json";          // outdoor
     const WEATHER_URL = null;                  // zet bv "weather.json" als je die hebt
     const TITLE = "Vrije OUTDOOR banen 20:00–21:30";
 
@@ -326,6 +326,7 @@
           <a class="active" href="outdoor.html">Outdoor</a>
         </div>
       `;
+
 
       const heroHtml = first ? `
         <section class="hero">
