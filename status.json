@@ -1,7 +1,12 @@
 {
-  "timestamp": "2025-12-27T09:20:25.567693",
+  "timestamp": "2025-12-27T09:40:58.056730",
   "new_slots": [],
   "all_slots": [
+    {
+      "date": "2025-12-29",
+      "court": "Padel indoor 6",
+      "period": "20:00 - 21:30"
+    },
     {
       "date": "2026-01-02",
       "court": "Padel indoor 2",
