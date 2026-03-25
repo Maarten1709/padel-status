@@ -1,6 +1,55 @@
 {
-  "timestamp": "2026-03-25T20:38:12.927145",
-  "new_slots": [],
+  "timestamp": "2026-03-25T23:34:48.421447",
+  "new_slots": [
+    {
+      "date": "2026-04-24",
+      "court": "Padel indoor 1"
+    },
+    {
+      "date": "2026-04-24",
+      "court": "Padel indoor 2"
+    },
+    {
+      "date": "2026-04-24",
+      "court": "Padel indoor 3"
+    },
+    {
+      "date": "2026-04-24",
+      "court": "Padel indoor 4"
+    },
+    {
+      "date": "2026-04-24",
+      "court": "Padel indoor 5"
+    },
+    {
+      "date": "2026-04-24",
+      "court": "Padel indoor 6"
+    },
+    {
+      "date": "2026-04-24",
+      "court": "Padel indoor 7"
+    },
+    {
+      "date": "2026-04-24",
+      "court": "Padel indoor 8"
+    },
+    {
+      "date": "2026-04-24",
+      "court": "Padel indoor 9"
+    },
+    {
+      "date": "2026-04-24",
+      "court": "Padel indoor 10"
+    },
+    {
+      "date": "2026-04-24",
+      "court": "Padel indoor 11"
+    },
+    {
+      "date": "2026-04-24",
+      "court": "Padel indoor 12"
+    }
+  ],
   "all_slots": [
     {
       "date": "2026-03-27",
@@ -35,11 +84,6 @@
     {
       "date": "2026-03-27",
       "court": "Padel indoor 12",
-      "period": "20:00 - 21:30"
-    },
-    {
-      "date": "2026-04-03",
-      "court": "Padel indoor 4",
       "period": "20:00 - 21:30"
     },
     {
@@ -121,7 +165,72 @@
       "date": "2026-04-17",
       "court": "Padel indoor 12",
       "period": "20:00 - 21:30"
+    },
+    {
+      "date": "2026-04-24",
+      "court": "Padel indoor 1",
+      "period": "20:00 - 21:30"
+    },
+    {
+      "date": "2026-04-24",
+      "court": "Padel indoor 2",
+      "period": "20:00 - 21:30"
+    },
+    {
+      "date": "2026-04-24",
+      "court": "Padel indoor 3",
+      "period": "20:00 - 21:30"
+    },
+    {
+      "date": "2026-04-24",
+      "court": "Padel indoor 4",
+      "period": "20:00 - 21:30"
+    },
+    {
+      "date": "2026-04-24",
+      "court": "Padel indoor 5",
+      "period": "20:00 - 21:30"
+    },
+    {
+      "date": "2026-04-24",
+      "court": "Padel indoor 6",
+      "period": "20:00 - 21:30"
+    },
+    {
+      "date": "2026-04-24",
+      "court": "Padel indoor 7",
+      "period": "20:00 - 21:30"
+    },
+    {
+      "date": "2026-04-24",
+      "court": "Padel indoor 8",
+      "period": "20:00 - 21:30"
+    },
+    {
+      "date": "2026-04-24",
+      "court": "Padel indoor 9",
+      "period": "20:00 - 21:30"
+    },
+    {
+      "date": "2026-04-24",
+      "court": "Padel indoor 10",
+      "period": "20:00 - 21:30"
+    },
+    {
+      "date": "2026-04-24",
+      "court": "Padel indoor 11",
+      "period": "20:00 - 21:30"
+    },
+    {
+      "date": "2026-04-24",
+      "court": "Padel indoor 12",
+      "period": "20:00 - 21:30"
     }
   ],
-  "disappeared_slots": []
+  "disappeared_slots": [
+    {
+      "date": "2026-04-03",
+      "court": "Padel indoor 4"
+    }
+  ]
 }
