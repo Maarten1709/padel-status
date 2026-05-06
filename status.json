@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-05-06T02:49:47.329267",
+  "timestamp": "2026-05-06T05:57:55.846456",
   "new_slots": [],
   "all_slots": [
     {
@@ -20,11 +20,6 @@
     {
       "date": "2026-05-08",
       "court": "Padel indoor 12",
-      "period": "20:00 - 21:30"
-    },
-    {
-      "date": "2026-05-12",
-      "court": "Padel indoor 5",
       "period": "20:00 - 21:30"
     },
     {
@@ -191,17 +186,20 @@
       "date": "2026-06-03",
       "court": "Padel indoor 11",
       "period": "20:00 - 21:30"
-    },
-    {
-      "date": "2026-06-04",
-      "court": "Padel indoor 1",
-      "period": "20:00 - 21:30"
-    },
-    {
-      "date": "2026-06-04",
-      "court": "Padel indoor 5",
-      "period": "20:00 - 21:30"
     }
   ],
-  "disappeared_slots": []
+  "disappeared_slots": [
+    {
+      "date": "2026-05-12",
+      "court": "Padel indoor 5"
+    },
+    {
+      "date": "2026-06-04",
+      "court": "Padel indoor 5"
+    },
+    {
+      "date": "2026-06-04",
+      "court": "Padel indoor 1"
+    }
+  ]
 }
