@@ -1,27 +1,6 @@
 {
-  "timestamp": "2026-05-17T22:26:23.362567",
-  "new_slots": [
-    {
-      "date": "2026-06-16",
-      "court": "Padel indoor 5"
-    },
-    {
-      "date": "2026-06-16",
-      "court": "Padel indoor 6"
-    },
-    {
-      "date": "2026-06-16",
-      "court": "Padel indoor 7"
-    },
-    {
-      "date": "2026-06-16",
-      "court": "Padel indoor 9"
-    },
-    {
-      "date": "2026-06-16",
-      "court": "Padel indoor 12"
-    }
-  ],
+  "timestamp": "2026-05-17T23:30:18.902853",
+  "new_slots": [],
   "all_slots": [
     {
       "date": "2026-05-22",
