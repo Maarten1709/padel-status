@@ -1,66 +1,56 @@
 {
-  "timestamp": "2026-06-02T23:44:38.988130",
-  "new_slots": [
+  "timestamp": "2026-06-03T04:05:26.139567",
+  "new_slots": [],
+  "all_slots": [
+    {
+      "date": "2026-06-12",
+      "court": "Padel outdoor 1",
+      "period": "20:00 - 21:30"
+    },
+    {
+      "date": "2026-06-12",
+      "court": "Padel outdoor 2",
+      "period": "20:00 - 21:30"
+    },
+    {
+      "date": "2026-06-19",
+      "court": "Padel outdoor 1",
+      "period": "20:00 - 21:30"
+    },
+    {
+      "date": "2026-06-19",
+      "court": "Padel outdoor 2",
+      "period": "20:00 - 21:30"
+    },
+    {
+      "date": "2026-06-26",
+      "court": "Padel outdoor 1",
+      "period": "20:00 - 21:30"
+    },
+    {
+      "date": "2026-06-26",
+      "court": "Padel outdoor 2",
+      "period": "20:00 - 21:30"
+    },
     {
       "date": "2026-07-02",
+      "court": "Padel outdoor 1",
+      "period": "20:00 - 21:30"
+    },
+    {
+      "date": "2026-07-02",
+      "court": "Padel outdoor 2",
+      "period": "20:00 - 21:30"
+    }
+  ],
+  "disappeared_slots": [
+    {
+      "date": "2026-06-02",
       "court": "Padel outdoor 1"
     },
     {
-      "date": "2026-07-02",
+      "date": "2026-06-02",
       "court": "Padel outdoor 2"
     }
-  ],
-  "all_slots": [
-    {
-      "date": "2026-06-02",
-      "court": "Padel outdoor 1",
-      "period": "20:00 - 21:30"
-    },
-    {
-      "date": "2026-06-02",
-      "court": "Padel outdoor 2",
-      "period": "20:00 - 21:30"
-    },
-    {
-      "date": "2026-06-12",
-      "court": "Padel outdoor 1",
-      "period": "20:00 - 21:30"
-    },
-    {
-      "date": "2026-06-12",
-      "court": "Padel outdoor 2",
-      "period": "20:00 - 21:30"
-    },
-    {
-      "date": "2026-06-19",
-      "court": "Padel outdoor 1",
-      "period": "20:00 - 21:30"
-    },
-    {
-      "date": "2026-06-19",
-      "court": "Padel outdoor 2",
-      "period": "20:00 - 21:30"
-    },
-    {
-      "date": "2026-06-26",
-      "court": "Padel outdoor 1",
-      "period": "20:00 - 21:30"
-    },
-    {
-      "date": "2026-06-26",
-      "court": "Padel outdoor 2",
-      "period": "20:00 - 21:30"
-    },
-    {
-      "date": "2026-07-02",
-      "court": "Padel outdoor 1",
-      "period": "20:00 - 21:30"
-    },
-    {
-      "date": "2026-07-02",
-      "court": "Padel outdoor 2",
-      "period": "20:00 - 21:30"
-    }
-  ],
-  "disappeared_slots": []
+  ]
 }
