@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-16T18:15:00.019787",
+  "timestamp": "2026-06-16T21:25:03.923749",
   "new_slots": [],
   "all_slots": [
     {
@@ -198,10 +198,5 @@
       "period": "20:00 - 21:30"
     }
   ],
-  "disappeared_slots": [
-    {
-      "date": "2026-06-19",
-      "court": "Padel indoor 1"
-    }
-  ]
+  "disappeared_slots": []
 }
