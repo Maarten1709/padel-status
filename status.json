@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-26T07:52:09.589912",
+  "timestamp": "2026-06-26T10:50:40.017007",
   "new_slots": [],
   "all_slots": [
     {
@@ -14,22 +14,12 @@
     },
     {
       "date": "2026-07-10",
-      "court": "Padel indoor 3",
-      "period": "20:00 - 21:30"
-    },
-    {
-      "date": "2026-07-10",
       "court": "Padel indoor 4",
       "period": "20:00 - 21:30"
     },
     {
       "date": "2026-07-10",
       "court": "Padel indoor 5",
-      "period": "20:00 - 21:30"
-    },
-    {
-      "date": "2026-07-10",
-      "court": "Padel indoor 6",
       "period": "20:00 - 21:30"
     },
     {
@@ -49,11 +39,6 @@
     },
     {
       "date": "2026-07-10",
-      "court": "Padel indoor 10",
-      "period": "20:00 - 21:30"
-    },
-    {
-      "date": "2026-07-10",
       "court": "Padel indoor 11",
       "period": "20:00 - 21:30"
     },
@@ -63,14 +48,39 @@
       "period": "20:00 - 21:30"
     },
     {
-      "date": "2026-07-15",
+      "date": "2026-07-10",
+      "court": "Padel indoor 3",
+      "period": "20:30 - 21:00"
+    },
+    {
+      "date": "2026-07-10",
+      "court": "Padel indoor 6",
+      "period": "20:30 - 21:00"
+    },
+    {
+      "date": "2026-07-10",
+      "court": "Padel indoor 10",
+      "period": "20:30 - 21:00"
+    },
+    {
+      "date": "2026-07-10",
+      "court": "Padel indoor 3",
+      "period": "21:00 - 21:30"
+    },
+    {
+      "date": "2026-07-10",
+      "court": "Padel indoor 6",
+      "period": "21:00 - 21:30"
+    },
+    {
+      "date": "2026-07-10",
       "court": "Padel indoor 10",
       "period": "21:00 - 21:30"
     },
     {
-      "date": "2026-07-16",
+      "date": "2026-07-15",
       "court": "Padel indoor 10",
-      "period": "20:00 - 21:30"
+      "period": "21:00 - 21:30"
     },
     {
       "date": "2026-07-17",
@@ -288,5 +298,10 @@
       "period": "20:00 - 21:30"
     }
   ],
-  "disappeared_slots": []
+  "disappeared_slots": [
+    {
+      "date": "2026-07-16",
+      "court": "Padel indoor 10"
+    }
+  ]
 }
