@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-09T08:41:14.707610",
+  "timestamp": "2026-08-09T09:37:55.697897",
   "new_slots": [],
   "all_slots": [
     {
@@ -73,10 +73,5 @@
       "period": "20:00 - 21:30"
     }
   ],
-  "disappeared_slots": [
-    {
-      "date": "2026-08-13",
-      "court": "Padel outdoor 2"
-    }
-  ]
+  "disappeared_slots": []
 }
