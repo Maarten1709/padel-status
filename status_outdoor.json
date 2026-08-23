@@ -1,7 +1,12 @@
 {
-  "timestamp": "2026-08-23T07:32:07.617449",
+  "timestamp": "2026-08-23T08:28:16.808068",
   "new_slots": [],
   "all_slots": [
+    {
+      "date": "2026-08-25",
+      "court": "Padel outdoor 1",
+      "period": "20:00 - 21:30"
+    },
     {
       "date": "2026-08-27",
       "court": "Padel outdoor 1",
