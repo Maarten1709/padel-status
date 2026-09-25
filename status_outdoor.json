@@ -1,12 +1,7 @@
 {
-  "timestamp": "2026-09-25T10:24:56.423007",
+  "timestamp": "2026-09-25T15:25:48.607355",
   "new_slots": [],
   "all_slots": [
-    {
-      "date": "2026-09-28",
-      "court": "Padel outdoor 2",
-      "period": "20:00 - 21:30"
-    },
     {
       "date": "2026-10-02",
       "court": "Padel outdoor 1",
@@ -95,15 +90,7 @@
   ],
   "disappeared_slots": [
     {
-      "date": "2026-10-13",
-      "court": "Padel outdoor 1"
-    },
-    {
-      "date": "2026-10-20",
-      "court": "Padel outdoor 2"
-    },
-    {
-      "date": "2026-10-01",
+      "date": "2026-09-28",
       "court": "Padel outdoor 2"
     }
   ]
